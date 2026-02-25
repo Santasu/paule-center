@@ -1,18 +1,21 @@
 {
-  "name": "paule-email-center",
+  "name": "paule-center",
   "version": "1.0.0",
   "private": true,
   "type": "commonjs",
-  "engines": { "node": ">=18" },
   "scripts": {
     "start": "node server.js",
+    "worker": "node worker.js",
     "cron": "node cron.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.49.1",
+    "bullmq": "^5.40.5",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "imapflow": "^1.0.186",
+    "ioredis": "^5.4.1",
     "mailparser": "^3.7.2",
     "nodemailer": "^6.9.16"
   }
